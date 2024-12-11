@@ -29,7 +29,7 @@ To achieve the goals of this project, we developed an OCR system that is divided
    ![After Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/AfterLabel.png)
 
    
-   After we labeled all the mutation account, we train them in google colab using **YOLOV5**
+   After we labeled all the mutation account, we train them in google colab using **YOLOV5** in about 50 epochs
 
    The evaluation of the training looks like this
    ![Training Result](https://raw.githubusercontent.com/Capstone-C242-PS367/finku-ml/main/Object%20Detection%20Training/Training_Result.png)
