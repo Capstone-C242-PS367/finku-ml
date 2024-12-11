@@ -9,17 +9,19 @@ This repository contains a project that builds an Optical Character Recognition 
 | Ashanti Fairuza            | M002B4KX0691 |
 | Muhammad Fathan Assadad    | M002B4KY2835 |
 
-## Project Description and Training
+## Feature Description and Its Training
 
 This project is designed to help users track their financial activity overtime and also set and achieve financial goals.
 
 To achieve the goals of this project, we developed an OCR system that is divided into two models, an Object Detection Model and a Character Recognition Model:
 
-### 1. **Object Detection Model**:
-   **DATASET**
+### 1. **Object Detection Model: **
+   An object detection model is a type of machine learning model designed to detect and locate objects within an image or video. 
+   Unlike image classification models, which only predict a label for the entire image, 
+   object detection models identify the presence and position of multiple objects within the image.
    
    The dataset used to train this Object Detection Model consists of BCA bank mutation. Initially, we collected 288 mutation account and 
-   manually labeled them into three classes: Date, Nominal, and Type, using Roboflow.
+   manually labeled them into three classes: blue square for Date, red square for Nominal, and green square for Type, using Roboflow.
 
    #### **Before Labeling**
    ![Before Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/BeforeLabel.png)
@@ -29,13 +31,22 @@ To achieve the goals of this project, we developed an OCR system that is divided
    
    After we labeled all the mutation account, we train them in google colab using **YOLOV5**
 
-   The result of the training looks like this
-   ![Training Result](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/Object_Detection_Training/Training_Result.png)
-### Overview
+   The evaluation of the training looks like this
+   ![Training Result](https://raw.githubusercontent.com/Capstone-C242-PS367/finku-ml/main/Object%20Detection%20Training/Training_Result.png)
 
-2. Weight Category Prediction and Calorie Estimation (https://huggingface.co/spaces/rulelulu/weight_body_classification)
+   #### How the Object Detection Model Works: 
+   1. Input: A Mutation Account image/pdf is input into the model.
+   2. Feature Extraction: The image is passed through the backbone.
+   3. Predictions: The model predicts bounding boxes, objectness scores, and class probabilities for each grid cell. 
+   4. Refinement: The predictions are refined using anchor boxes and multi-scale feature maps.
+   5. Non-Maximum Suppression (NMS): After predictions, NMS is applied to eliminate overlapping boxes and keep the best one for each detected object.
+   6. Output: The final bounding boxes with their corresponding class labels and confidence scores are output.
 
+### 2. **Character Recognition Model: **
+   A character recognition model is a type of machine learning model designed to recognize and 
+   classify individual characters (numbers from 0-9, letters from a-z in uppercase and lowercase) in an image.
 
+   Our TensorFlow Character Recognition Model look like this: 
 ### Program Flows
 1. Nutrition Label Scanning and Grading
 - Input: URL of an image of a nutrition label.
