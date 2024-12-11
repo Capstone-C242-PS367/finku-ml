@@ -22,19 +22,19 @@ To achieve the goals of this project, we developed an OCR system that is divided
    manually labeled them into three classes: Date, Nominal, and Type, using Roboflow.
 
    #### **Before Labeling**
-   ![Before Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/BeforeLabel.jpg)
+   ![Before Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/BeforeLabel.png)
    #### **After Labeling**
-   ![After Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/AfterLabel.jpg)
+   ![After Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/AfterLabel.png)
 
    
    After we labeled all the mutation account, we train them in google colab using **YOLOV5**
 
+   The result of the training looks like this
+   ![Training Result](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/Object_Detection_Training/Training_Result.png)
 ### Overview
 
 2. Weight Category Prediction and Calorie Estimation (https://huggingface.co/spaces/rulelulu/weight_body_classification)
 
-
-![Screenshot (2007)](https://github.com/nutriomatic/machine-learning-kaisar/assets/105763198/9c1a9e06-79ad-4b9a-88f3-97c30df36fb5)
 
 ### Program Flows
 1. Nutrition Label Scanning and Grading
