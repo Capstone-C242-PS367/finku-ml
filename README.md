@@ -9,12 +9,7 @@ This repository contains a project that builds an Optical Character Recognition 
 | Ashanti Fairuza            | M002B4KX0691 |
 | Muhammad Fathan Assadad    | M002B4KY2835 |
 
-## Outline
-
-- [Project Description](#project-description)
-- [Training](#training)
-
-## Project Description
+## Project Description and Training
 
 This project is designed to help users track their financial activity overtime and also set and achieve financial goals.
 
@@ -22,20 +17,23 @@ To achieve the goals of this project, we developed an OCR system that is divided
 
 ### 1. **Object Detection Model**:
    **DATASET**
-   The dataset used to train this Object Detection Model consists of BCA bank transaction records. Initially, we collected 288 transaction records and 
+   
+   The dataset used to train this Object Detection Model consists of BCA bank mutation. Initially, we collected 288 mutation account and 
    manually labeled them into three classes: Date, Nominal, and Type, using Roboflow.
-   - **OCR Technology**: Uses Optical Character Recognition (OCR) to extract text from nutrition labels.
-   - **Nutritional Analysis**: Analyzes the extracted nutritional information to evaluate the product's healthiness.
-   - **Grading System**: Outputs a grade for the product based on predefined nutritional criteria.
-3. **Weight Category Prediction and Calorie Estimation**:
-   - **Weight Prediction Model**: Predicts the user's weight category based on input data.
-   - **Calorie Estimation Model**: Estimates the daily calorie needs of the user.
-     
+
+   #### **Before Labeling**
+   ![Before Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/BeforeLabel.jpg)
+   #### **After Labeling**
+   ![After Labeling](https://github.com/Capstone-C242-PS367/finku-ml/blob/main/AfterLabel.jpg)
+
+   
+   After we labeled all the mutation account, we train them in google colab using **YOLOV5**
+
 ### Overview
 
 2. Weight Category Prediction and Calorie Estimation (https://huggingface.co/spaces/rulelulu/weight_body_classification)
-![Screenshot (2005)](https://github.com/nutriomatic/machine-learning-kaisar/assets/105763198/ffcdc0d9-9728-4b83-8e17-3d00712307ba)
-![Screenshot (2006)](https://github.com/nutriomatic/machine-learning-kaisar/assets/105763198/cba47b42-0954-433a-b832-7b0564968c88)
+
+
 ![Screenshot (2007)](https://github.com/nutriomatic/machine-learning-kaisar/assets/105763198/9c1a9e06-79ad-4b9a-88f3-97c30df36fb5)
 
 ### Program Flows
