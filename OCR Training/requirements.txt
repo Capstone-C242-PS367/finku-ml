@@ -5,3 +5,4 @@ matplotlib: 3.8.0
 google.colab: 0.0.1a2
 sklearn: 1.5.2
 cv2 (OpenCV): 4.10.0
+roboflow: 1.1.49
