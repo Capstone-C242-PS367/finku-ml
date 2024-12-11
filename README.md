@@ -1,30 +1,33 @@
 # Features of Machine Learning
 
-This repository contains a project that scans nutrition labels from food and beverage products, reads the nutritional information, and outputs a grade for the product. Additionally, it includes models to predict weight categories and estimate daily calorie needs. The primary goal of this project is to assist users in making healthier dietary choices by providing an easy-to-use tool for analyzing the nutritional content of food and beverage products. By offering insights into the healthiness of these products and personalized recommendations based on individual data, the project aims to promote better nutrition and overall well-being.
+This repository contains a project that builds an Optical Character Recognition (OCR) model with TensorFlow to detect characters, predict characters and words in a bank's mutation transaction, and classify class for Date, Nominal, and Type in mutation. The main problem We want to solve is the inconvenience and inconsistency of tracking finances manually. By using OCR to automatically pull data from bank transactions, our solution makes it easy for users to keep track of their finances without needing special knowledge or spending time on constant manual updates.
 
 ## Machine Learning Team Members
 | Team Member                | Cohort ID    |
 | -------------------------- | ------------ |
-| Rule Lulu Damara           | M004D4KX2890 |
-| Anandito Satria Asyraf     | M012D4KY1941 |
-| Muhammad Afief Abdurrahman | M002D4KY1550 |
+| Annisa Risty               | M002B4KX0583 |
+| Ashanti Fairuza            | M002B4KX0691 |
+| Muhammad Fathan Assadad    | M002B4KY2835 |
 
 ## Outline
 
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Directory Structure](#directory-structure)
-- [Contributor](#contributions)
+- [Project Description](#project-description)
+- [Training](#training)
 
 ## Project Description
 
-This project is designed to help users make informed decisions about their diet by providing two key functionalities:
-1. **Nutrition Label Scanning and Grading**: 
+This project is designed to help users track their financial activity overtime and also set and achieve financial goals.
+
+To achieve the goals of this project, we developed an OCR system that is divided into two models, an Object Detection Model and a Character Recognition Model:
+
+### 1. **Object Detection Model**:
+   **DATASET**
+   The dataset used to train this Object Detection Model consists of BCA bank transaction records. Initially, we collected 288 transaction records and 
+   manually labeled them into three classes: Date, Nominal, and Type, using Roboflow.
    - **OCR Technology**: Uses Optical Character Recognition (OCR) to extract text from nutrition labels.
    - **Nutritional Analysis**: Analyzes the extracted nutritional information to evaluate the product's healthiness.
    - **Grading System**: Outputs a grade for the product based on predefined nutritional criteria.
-2. **Weight Category Prediction and Calorie Estimation**:
+3. **Weight Category Prediction and Calorie Estimation**:
    - **Weight Prediction Model**: Predicts the user's weight category based on input data.
    - **Calorie Estimation Model**: Estimates the daily calorie needs of the user.
      
